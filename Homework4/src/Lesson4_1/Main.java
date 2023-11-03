@@ -28,14 +28,11 @@ public class Main {
     static int vtoroeChislo() {
 
         while (true) {
-
+            System.out.println("Введите второе число: ");
+            Scanner sc = new Scanner(System.in);
             try {
-
-                System.out.println("Введите второе число: ");
-                Scanner sc = new Scanner(System.in);
                 int x = sc.nextInt();
                 return x;
-
             } catch (InputMismatchException x) {
                 System.out.println("Вы ввели не число");
             }
